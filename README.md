@@ -31,3 +31,5 @@ Final project for python remote group 11
 * 1.13 Add logic to remove stop words from text - 13h
 * 1.14 Connect submit button with the logics - 8h
 * 1.15 Add logic to display the result of each toggles - 13h
+
+
