@@ -1,71 +1,15 @@
 <!DOCTYPE html>
+{% load static %}
 <html>
 <head>
+
   <title>Smart App</title>
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<style>
-body {
-  margin: 0;
-  font-family: Arial, Helvetica, sans-serif;
-}
-
-.topnav {
-  overflow: hidden;
-  background-color: #c7aa6a;
-}
-
-h1{
-  text-align: center;
-  margin: 15%;
-
-}
-
-.button {
-  border-radius: 10px;
-  border: 2px solid transparent;
-  color: white;
-  padding: 1em;
-  text-align: center;
-  text-decoration: none;
-  display: inline-block;
-  font-size: 16px;
-  margin: 0;
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  -ms-transform: translate(-50%, -50%);
-  transform: translate(-50%, -50%);
-  cursor: pointer;
-  background-color: #c7aa6a;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
-}
-
-.topnav a {
-  float: left;
-  color: black;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-  font-size: 18px;
-  font-weight: bold;
-
-}
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="{% static '/styles.css' %}">
 
 
-textarea{
-    display: block;
-    margin: auto;
-    background-color: #dddddd;
-    color: #666666;
-    padding: 1em;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    outline: none;
-    font-size: 16px;
 
-}
 
-</style>
 </head>
 
 <body>
