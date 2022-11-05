@@ -24,3 +24,18 @@ class IndexPage(TemplateView):
         context['page_name'] = 'Smart App'
 
         return context
+
+
+class GuidePage(TemplateView):
+    template_name = 'guide.html'
+    context_object_name = 'guide'
+
+    def get_context_data(self, **kwargs):
+        context = super().get_context_data(**kwargs)
+
+        context['page_name'] = 'Smart App'
+
+        return context
+
+
+

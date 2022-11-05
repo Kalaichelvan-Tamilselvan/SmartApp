@@ -2,12 +2,6 @@
 Final project SDA Python Course
 started 23/10/2022
 
-# Final-Project
-Final project for python remote group 11
-* Started 23/10/2022
-* Create page
-* This is a final project.
-
 * Dev flow - > Todo  |  Indevelopment  |   Review | Testing | Done
 
 # Development Tickets for project:
