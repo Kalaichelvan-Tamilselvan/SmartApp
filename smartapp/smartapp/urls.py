@@ -16,11 +16,16 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 
-from smartapplication.views import IndexPage, HomePage
+from smartapplication.views import IndexPage, HomePage, GuidePage
 
 
 urlpatterns = [
     path('', HomePage.as_view(), name='Home'),
     path('admin/', admin.site.urls),
     path('index/', IndexPage.as_view(), name='Smart_App'),
+    path('index/guide/', GuidePage.as_view(), name='Guide_Page'),
 ]
+
+
+
+
