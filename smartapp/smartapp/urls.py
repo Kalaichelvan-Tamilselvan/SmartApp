@@ -20,10 +20,10 @@ from smartapplication.views import IndexPage, HomePage, GuidePage
 
 
 urlpatterns = [
-    path('', HomePage.as_view(), name='Home'),
+    path('', HomePage.as_view(), name='Welcome'),
     path('admin/', admin.site.urls),
-    path('index/', IndexPage.as_view(), name='Smart_App'),
-    path('index/guide/', GuidePage.as_view(), name='Guide_Page'),
+    path('index/', IndexPage.as_view(), name='Index'),
+    path('index/guide/', GuidePage.as_view(), name='Guide'),
 ]
 
 

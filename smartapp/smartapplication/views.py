@@ -1,6 +1,8 @@
 from django.shortcuts import render
+from django.urls import reverse_lazy
+from django.views.generic import TemplateView, FormView
 
-from django.views.generic import TemplateView
+from smartapplication.forms import TestForm
 
 
 # Create your views here.
@@ -9,19 +11,18 @@ class HomePage(TemplateView):
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-        context['page_name'] = 'Home Page'
+        context['page_name'] = 'Welcome'
 
         return context
 
 
-class IndexPage(TemplateView):
+class IndexPage(FormView):
     template_name = 'index.html'
-    context_object_name = 'index'
+    form_class = TestForm
+    success_url = reverse_lazy('Guide')
 
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
-
-        context['page_name'] = 'Smart App'
 
         return context
 
@@ -33,9 +34,4 @@ class GuidePage(TemplateView):
     def get_context_data(self, **kwargs):
         context = super().get_context_data(**kwargs)
 
-        context['page_name'] = 'Smart App'
-
         return context
-
-
-
