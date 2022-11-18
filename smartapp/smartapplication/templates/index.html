@@ -9,34 +9,32 @@
 			<textarea placeholder="Enter Your Text Here!" cols="120" rows="15" name="textarea"></textarea>
 			<div class="main">
 				<br/>
-					<input type="checkbox" id="check1" class="toggle" name="RemovePunctuations">
 				    {{form.remove_punctuations}}
 					<label> Remove Punctuation</label>
 				<br/>
-					<input type="checkbox" id="check2" class="toggle" name="UpperCase">
-				     {{ form.upper_case }}
-					<label for="check2">Upper Case</label>
+					{{ form.upper_case }}
+					<label>Upper Case</label>
 				<br/>
-					<input type="checkbox" id="check3" class="toggle" name="LowerCase">
-					<label for="check3">Lower Case</label>
+					{{ form.lower_case }}
+					<label>Lower Case</label>
 				<br/>
-					<input type="checkbox" id="check4" class="toggle" name="NewLineRemove">
-					<label for="check4">New Line Remove</label>
+					{{ form.new_line_remove }}
+					<label>New Line Remove</label>
 				<br/>
-					<input type="checkbox" id="check5" class="toggle" name="ExtraSpaceRemove">
-					<label for="check5">Extra Space Remove</label>
+					{{ form.extra_space_remove }}
+					<label>Extra Space Remove</label>
 				<br/>
-					<input type="checkbox" id="check6" class="toggle" name="CountCharacters">
-					<label for="check6">Count Characters</label>
+					{{ form.count_characters }}
+					<label>Count Characters</label>
 				<br/>
-					<input type="checkbox" id="check7" class="toggle" name="SpellCheck">
-					<label for="check7">Spell Check</label>
+					{{ form.spell_check }}
+					<label>Spell Check</label>
 				<br/>
-					<input type="checkbox" id="check8" class="toggle" name="GenerateSummary">
-					<label for="check8">Generate Summary of a Word</label>
+					{{ form.generate_word_summary }}
+					<label>Generate Summary of a Word</label>
 				<br/>
-					<input type="checkbox" id="check9" class="toggle" name="RemoveStopWords">
-					<label for="check9">Remove Stop Words of Your Paragraph</label>
+					{{ form.remove_stop_words }}
+					<label>Remove Stop Words of Your Paragraph</label>
 			</div>
 		</div>
 		<a href="guide">
@@ -44,7 +42,3 @@
 		</a>
 	</form>
 {% endblock %}
-
-
-
-
