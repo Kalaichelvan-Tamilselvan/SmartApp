@@ -4,15 +4,17 @@
 {% block content %}
 	<form method="post">
 		{% csrf_token %}
+
 		<div class="textbox">
 			<textarea placeholder="Enter Your Text Here!" cols="120" rows="15" name="textarea"></textarea>
-
 			<div class="main">
 				<br/>
 					<input type="checkbox" id="check1" class="toggle" name="RemovePunctuations">
-					<label for="check1">Remove Punctuations</label>
+				    {{form.remove_punctuations}}
+					<label> Remove Punctuation</label>
 				<br/>
 					<input type="checkbox" id="check2" class="toggle" name="UpperCase">
+				     {{ form.upper_case }}
 					<label for="check2">Upper Case</label>
 				<br/>
 					<input type="checkbox" id="check3" class="toggle" name="LowerCase">
