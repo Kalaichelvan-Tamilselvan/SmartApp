@@ -1,41 +1,31 @@
 {% extends "base.html" %}
 
-
 {% block content %}
 	<form method="post">
 		{% csrf_token %}
 
 		<div class="textbox">
 			<textarea placeholder="Enter Your Text Here!" cols="120" rows="15" name="textarea"></textarea>
-			<div class="main">
-				<br/>
-				    {{form.remove_punctuations}}
-					<label> Remove Punctuation</label>
-				<br/>
-					{{ form.upper_case }}
-					<label>Upper Case</label>
-				<br/>
-					{{ form.lower_case }}
-					<label>Lower Case</label>
-				<br/>
-					{{ form.new_line_remove }}
-					<label>New Line Remove</label>
-				<br/>
-					{{ form.extra_space_remove }}
-					<label>Extra Space Remove</label>
-				<br/>
-					{{ form.count_characters }}
-					<label>Count Characters</label>
-				<br/>
-					{{ form.spell_check }}
-					<label>Spell Check</label>
-				<br/>
-					{{ form.generate_word_summary }}
-					<label>Generate Summary of a Word</label>
-				<br/>
-					{{ form.remove_stop_words }}
-					<label>Remove Stop Words of Your Paragraph</label>
-			</div>
+				<div class="toggle_button">
+					<p> <label class="switch"> {{ form.remove_punctuations }}
+						<span class = "slider round"> </span> </label> Remove Punctuations</p>
+					<p> <label class="switch"> {{ form.upper_case }}
+						<span class = "slider round"> </span> </label> Upper Case</p>
+					<p> <label class="switch"> {{ form.lower_case }}
+						<span class = "slider round"> </span> </label> Lower Case</p>
+					<p> <label class="switch"> {{ form.new_line_remove }}
+						<span class = "slider round"> </span> </label> New Line Remove</p>
+					<p> <label class="switch"> {{ form.extra_space_remove }}
+						<span class = "slider round"> </span> </label> Extra Space Remove</p>
+					<p> <label class="switch"> {{ form.count_characters }}
+						<span class = "slider round"> </span> </label> Count Characters</p>
+					<p> <label class="switch"> {{ form.spell_check }}
+						<span class = "slider round"> </span> </label> Spell Check</p>
+					<p> <label class="switch"> {{ form.generate_word_summary }}
+						<span class = "slider round"> </span> </label> Generate Summary of a Word</p>
+					<p> <label class="switch"> {{ form.remove_stop_words }}
+						<span class = "slider round"> </span> </label> Remove Stop Words of Your Paragraph</p>
+				</div>
 		</div>
 		<a href="guide">
 			<button class="submit">Submit</button>
