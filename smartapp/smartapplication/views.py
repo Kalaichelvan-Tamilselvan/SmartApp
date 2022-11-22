@@ -42,39 +42,39 @@ def GuidePage(request):
     text = form_data['textarea']
     current_text = text
     if bool(form_data['remove_punctuations']):
-        changed_data['Remove Punctuations:'] = punctuation_removal(text)
+        changed_data['Your sentence with Removed Punctuations'] = punctuation_removal(text)
         current_text = punctuation_removal(current_text)
 
     if bool(form_data['upper_case']):
-        changed_data['Upper Case:'] = text_upper(current_text)
+        changed_data['Your Upper Case text'] = text_upper(current_text)
         current_text = text_upper(current_text)
 
     if bool(form_data['lower_case']):
-        changed_data['Lower Case:'] = text_lower(current_text)
+        changed_data['Your Lower Case text'] = text_lower(current_text)
         current_text = text_lower(current_text)
 
     if bool(form_data['new_line_remove']):
-        changed_data['New Line Remove:'] = remove_newline(current_text)
+        changed_data['Your sentence with New Line Removed'] = remove_newline(current_text)
         current_text = remove_newline(current_text)
 
     if bool(form_data['extra_space_remove']):
-        changed_data['Extra Space Remove:'] = extra_space_remove(current_text)
+        changed_data['Your sentence with Extra Space Removed'] = extra_space_remove(current_text)
         current_text = extra_space_remove(current_text)
 
     if bool(form_data['count_characters']):
-        changed_data['Count Characters:'] = count_characters(current_text)
+        changed_data['Your total Count of Characters'] = count_characters(current_text)
         current_text = count_characters(current_text)
 
     if bool(form_data['spell_check']):
-        changed_data['Spell Check:'] = text_spellchecker(current_text)
+        changed_data['Your Spell Check for the text is'] = text_spellchecker(current_text)
         current_text = text_spellchecker(current_text)
 
     if bool(form_data['generate_word_summary']):
-        changed_data['Generate summary:'] = summary_generate(current_text)
+        changed_data['Your summary for the word is'] = summary_generate(current_text)
         current_text = summary_generate(current_text)
 
     if bool(form_data['remove_stop_words']):
-        changed_data['Remove Stop Word:'] = remove_stopwords(current_text)
+        changed_data["Your sentence with Removed Stop Words"] = remove_stopwords(current_text)
         current_text = remove_stopwords(current_text)
 
     context = {
