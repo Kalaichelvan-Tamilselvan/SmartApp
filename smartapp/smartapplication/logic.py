@@ -47,7 +47,7 @@ def summary_generate(text):
 
 def remove_stopwords(text):
     stop_words = set(stopwords.words('english'))
-    word_tokens = word_tokenize(text)
+    word_tokens = word_tokenize(str(text))
     filtered_sentence = str([w for w in word_tokens if not w.lower() in stop_words])
     remove_whitespace = (" ".join(filtered_sentence.split()))
     remove_punctuation = remove_whitespace.translate(str.maketrans('', '', string.punctuation))
