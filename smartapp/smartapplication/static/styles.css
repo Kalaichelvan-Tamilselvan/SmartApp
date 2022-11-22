@@ -1,69 +1,68 @@
 * {
-    margin: 0;
-    padding: 0;
-    font-family: Arial, Helvetica, sans-serif;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, Helvetica, sans-serif;
+  box-sizing: border-box;
 }
 .topnav {
-    overflow: hidden;
-    background-color: #c7aa6a;
+  overflow: hidden;
+  background-color: #c7aa6a;
 }
 .topnav a {
-    float: left;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 18px;
-    font-weight: bold;
+  float: left;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 18px;
+  font-weight: bold;
 }
 .topnav a:hover {
-    background-color: #dccaa3;
-    border-radius: 15px;
+  background-color: #dccaa3;
+  border-radius: 15px;
 }
 .HM {
-    width: 35px;
-    height: 5px;
-    background-color: black;
-    margin: 6px 0;
+  width: 35px;
+  height: 5px;
+  background-color: black;
+  margin: 6px 0;
 }
 .topnav-right {
-    float: right;
-    margin: -10px;
+  float: right;
+  margin: -10px;
 }
 .home {
-    text-align: center;
-    position: relative;
-    margin: 15%;
+  text-align: center;
+  position: relative;
+  margin: 15%;
 }
 .home-button {
-    border-radius: 10px;
-    border: 2px solid transparent;
-    color: white;
-    background-color: #c7aa6a;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 1em;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
-    position: absolute;
-    top: 60%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: white;
+  background-color: #c7aa6a;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 1em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
+  position: absolute;
+  top: 60%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 textarea {
-    background-color: #ddd;
-    color: #666666;
-    padding: 10px;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    outline: none;
-    font-size: 16px;
+  background-color: #ddd;
+  color: #666666;
+  padding: 10px;
+  border-radius: 10px;
+  border: 2px solid transparent;
+  outline: none;
+  font-size: 16px;
 }
-.switch{
+.switch {
   position: relative;
   display: inline-block;
   width: 45px;
@@ -82,9 +81,8 @@ textarea {
   right: 0;
   bottom: 0;
   background-color: #ccc;
-  -webkit-transition: .4s;
-  transition: .4s;
-
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 .slider:before {
   position: absolute;
@@ -94,8 +92,8 @@ textarea {
   left: 3px;
   bottom: 2px;
   background-color: white;
-  -webkit-transition: .4s;
-  transition: .4s;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
 }
 input:checked + .slider {
   background-color: #c7aa6a;
@@ -114,40 +112,40 @@ input:checked + .slider:before {
 .slider.round:before {
   border-radius: 50%;
 }
-.toggle_button{
-   line-height: 30px;
+.toggle_button {
+  line-height: 30px;
+  margin: 10px 25px;
 }
 .textbox {
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
+  max-width: 1000px;
+  margin: auto;
+  padding: 20px;
 }
-.main{
-    margin-left: 1%;
+.main {
+  margin-left: 1%;
 }
 .submit {
-    margin-left: 1%;
-    margin-top: 0.5%;
-    border-radius: 10px;
-    border: 2px solid transparent;
-    color: white;
-    background-color: #14afde;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
-    padding: 0.5em;
-    text-align: center;
-    text-decoration: none;
-    font-size: 16px;
-    cursor: pointer;
-    display: inline-block;
-    position: absolute;
-    top: 95%;
-    left: 20%;
-    transform: translate(-50%, -50%);
+  border-radius: 10px;
+  border: 2px solid transparent;
+  color: white;
+  background-color: #14afde;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  padding: 0.5em;
+  text-align: center;
+  text-decoration: none;
+  font-size: 16px;
+  cursor: pointer;
+  display: inline-block;
 }
 .guide {
-    margin: 10%;
+  background-color: #ddd;
+  color: black;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 5%;
 }
 
-
+.details {
+  margin: 25px 350px;
+  font-family: Lucida Sans Unicode;
+}
