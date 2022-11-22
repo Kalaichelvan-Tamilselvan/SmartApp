@@ -61,6 +61,10 @@ textarea {
   border: 2px solid transparent;
   outline: none;
   font-size: 16px;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+  width: 100%
 }
 .switch {
   position: relative;
@@ -146,6 +150,6 @@ input:checked + .slider:before {
 }
 
 .details {
-  margin: 25px 350px;
-  font-family: Lucida Sans Unicode;
+  margin: 25px 30px;
+
 }
