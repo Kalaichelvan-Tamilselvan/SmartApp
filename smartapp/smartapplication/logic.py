@@ -32,7 +32,7 @@ def extra_space_remove(text):
 
 def count_characters(text):
     text = len(text) - text.count(" ")
-    return text
+    return str(text)
 
 
 def text_spellchecker(text):
