@@ -42,7 +42,7 @@ def text_spellchecker(text):
 
 
 def summary_generate(text):
-    return wikipedia.summary(text)
+    return wikipedia.summary(text, auto_suggest=False)
 
 
 def remove_stopwords(text):
