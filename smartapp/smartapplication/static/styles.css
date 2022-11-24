@@ -150,6 +150,5 @@ input:checked + .slider:before {
 }
 
 .details {
-  margin: 25px 30px;
-
+  margin: 25px 60px;
 }
