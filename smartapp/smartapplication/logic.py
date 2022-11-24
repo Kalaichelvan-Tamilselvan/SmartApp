@@ -42,8 +42,14 @@ def text_spellchecker(text):
 
 
 def summary_generate(text):
-    return wikipedia.summary(text, auto_suggest=False)
-
+# return wikipedia.summary(text, auto_suggest=False)
+    try:
+        # return wikipedia.summary(''.join(text.splitlines()), auto_suggest=False)
+        return wikipedia.summary(text, auto_suggest=False)
+    except wikipedia.exceptions.PageError:
+        return f'Summary for "{text}" is not found! Please try again with another word.'
+    except wikipedia.exceptions.DisambiguationError as e:
+        return f'Summary for "{text}" is not found!  \n{e}'
 
 def remove_stopwords(text):
     stop_words = set(stopwords.words('english'))
