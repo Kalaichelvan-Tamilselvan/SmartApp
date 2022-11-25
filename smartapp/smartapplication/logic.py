@@ -21,13 +21,15 @@ def text_lower(text):
 
 
 def remove_newline(text):
-    text = ''.join(text.splitlines())
+    text = " ".join(text.split())
     return text
 
 
 def extra_space_remove(text):
-    text = (" ".join(text.split()))
-    return text
+    extra_space = "  "
+    while extra_space in text:
+        text = text.replace(extra_space, " ")
+    return text.strip()
 
 
 def count_characters(text):
@@ -42,7 +44,7 @@ def text_spellchecker(text):
 
 
 def summary_generate(text):
-# return wikipedia.summary(text, auto_suggest=False)
+    # return wikipedia.summary(text, auto_suggest=False)
     try:
         # return wikipedia.summary(''.join(text.splitlines()), auto_suggest=False)
         return wikipedia.summary(text, auto_suggest=False)
@@ -50,6 +52,7 @@ def summary_generate(text):
         return f'Summary for "{text}" is not found! Please try again with another word.'
     except wikipedia.exceptions.DisambiguationError as e:
         return f'Summary for "{text}" is not found!  \n{e}'
+
 
 def remove_stopwords(text):
     stop_words = set(stopwords.words('english'))

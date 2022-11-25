@@ -63,7 +63,6 @@ def GuidePage(request):
 
     if bool(form_data['count_characters']):
         changed_data['Your total Count of Characters'] = count_characters(current_text)
-        current_text = count_characters(current_text)
 
     if bool(form_data['spell_check']):
         changed_data['Your Spell Check for the text is'] = text_spellchecker(current_text)
