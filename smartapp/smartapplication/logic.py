@@ -3,6 +3,9 @@ from textblob import TextBlob
 import wikipedia
 from nltk.corpus import stopwords
 from nltk.tokenize import word_tokenize
+import nltk
+nltk.download('stopwords')
+nltk.download('punkt')
 
 
 def punctuation_removal(text):
@@ -61,6 +64,6 @@ def remove_stopwords(text):
     remove_whitespace = (" ".join(filtered_sentence.split()))
     remove_punctuation = remove_whitespace.translate(str.maketrans('', '', string.punctuation))
     if 'Summary' in text:
-        return f' Not found! Try again.'
+        return "Not found! Try again."
     else:
         return remove_punctuation
