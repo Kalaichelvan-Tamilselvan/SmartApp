@@ -38,20 +38,20 @@ def count_characters(text):
 
 
 def text_spellchecker(text):
-    text = TextBlob(text)
+    text = TextBlob(text.casefold())
     result = text.correct()
-    return result
+    return str(result)
 
 
 def summary_generate(text):
-    # return wikipedia.summary(text, auto_suggest=False)
     try:
-        # return wikipedia.summary(''.join(text.splitlines()), auto_suggest=False)
         return wikipedia.summary(text, auto_suggest=False)
     except wikipedia.exceptions.PageError:
         return f'Summary for "{text}" is not found! Please try again with another word.'
     except wikipedia.exceptions.DisambiguationError as e:
-        return f'Summary for "{text}" is not found!  \n{e}'
+        return f'Summary for "{text}" is not found! {e.options}'
+    except KeyError:
+        return f'Summary for "{text}" is not found! Please try again with another word.'
 
 
 def remove_stopwords(text):
@@ -60,4 +60,7 @@ def remove_stopwords(text):
     filtered_sentence = str([w for w in word_tokens if not w.lower() in stop_words])
     remove_whitespace = (" ".join(filtered_sentence.split()))
     remove_punctuation = remove_whitespace.translate(str.maketrans('', '', string.punctuation))
-    return remove_punctuation
+    if 'Summary' in text:
+        return f' Not found! Try again.'
+    else:
+        return remove_punctuation
