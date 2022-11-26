@@ -22,8 +22,19 @@
         </nav>
   </nav>
         <div class="guide">
-             <h2>Result:  {{ current_text }}</h2>
-
+                <h3>Result: </h3> <p class="out">{{ current_text|linebreaksbr }}</p>
         </div>
+
+  {% for k, v in content.items %}
+    <div class="details">
+        <ul>
+            <li><h3>{{ k }}</h3></li>
+            <p class="out"><br>{{ v|linebreaksbr }}</p>
+        </ul>
+        <br>
+        <hr style="width:80%;text-align:left;margin-left:0">
+    </div>
+ {% endfor %}
+
 </body>
 </html>

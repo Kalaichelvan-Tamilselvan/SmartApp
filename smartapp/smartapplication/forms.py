@@ -2,7 +2,7 @@ from django import forms
 
 
 class TestForm(forms.Form):
-    textarea = forms.CharField(max_length=500, widget=forms.Textarea, required=True)
+    textarea = forms.CharField(max_length=500, widget=forms.Textarea, required=True, strip=False)
     remove_punctuations = forms.BooleanField(required=False)
     upper_case = forms.BooleanField(required=False)
     lower_case = forms.BooleanField(required=False)
