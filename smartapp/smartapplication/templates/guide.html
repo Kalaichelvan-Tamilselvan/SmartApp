@@ -22,15 +22,17 @@
         </nav>
   </nav>
         <div class="guide">
-                <p>Your Result: </p> <p>{{ current_text|linebreaks }}</p>
+                <h3>Result: </h3> <p class="out">{{ current_text|linebreaksbr }}</p>
         </div>
 
   {% for k, v in content.items %}
     <div class="details">
         <ul>
-            <li><h2>{{ k }}</h2></li>
-            <p><br>{{ v|linebreaks }}</p>
+            <li><h3>{{ k }}</h3></li>
+            <p class="out"><br>{{ v|linebreaksbr }}</p>
         </ul>
+        <br>
+        <hr style="width:80%;text-align:left;margin-left:0">
     </div>
  {% endfor %}
 
