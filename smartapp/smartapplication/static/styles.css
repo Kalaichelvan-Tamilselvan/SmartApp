@@ -148,7 +148,11 @@ input:checked + .slider:before {
   border-radius: 10px;
   margin: 5%;
 }
-
 .details {
-  margin: 25px 60px;
+  margin: 10px 100px;
+}
+p.out {
+  margin: 10px;
+  font-family: Verdana, sans-serif;
+  font-size: 115%;
 }
