@@ -31,6 +31,7 @@ This project will create a web application using Python, Django, HTML, CSS and J
 - The application will allow users to quickly and easily change sentences to upper and lower case.
 - The application will allow users to quickly and easily remove newlines and punctuations.
 - The application will allow users to quickly and easily remove stop words using NLTK.
+- The application will provide a robust and easy to use interface for users.
 
 
 # Development Tickets for Project
