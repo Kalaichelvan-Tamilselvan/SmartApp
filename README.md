@@ -1,6 +1,6 @@
 ## Smart App
 
-This project will create a web application using Python, Django, HTML, CSS and JavaScript. The application will allow users to generate summaries from Wikipedia, spell check, change sentences to upper case and lower case, remove newlines and punctuations and remove stop words. 
+This project will create a web application using Python, Django, HTML, CSS and JavaScript. The application will allow users to generate summaries from Wikipedia, spell check, change sentences to upper case and lower case, remove newlines, remove punctuations and remove stop words. 
 
 ### Features
 
