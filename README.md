@@ -84,7 +84,7 @@ python manage.py runserver
 
 * **Kalaichelvan Tamilselvan** - *Initial work* - [Kalaichelvan-Tamilselvan](https://github.com/Kalaichelvan-Tamilselvan)
 
-See also the list of [contributors](https://github.com/<username>/smart-app/contributors) who participated in this project.
+See also the list of [contributors](https://github.com/Kalaichelvan-Tamilselvan/SmartApp/graphs/contributors) who participated in this project.
 
 
 
