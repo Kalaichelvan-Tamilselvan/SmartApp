@@ -1,8 +1,41 @@
-## Smart App
+# Smart App
 
 This project will create a web application using Python, Django, HTML, CSS and JavaScript. The application will allow users to generate summaries from Wikipedia, spell check, change sentences to upper case and lower case, remove newlines, remove punctuations and remove stop words. 
 
-## Getting Started
+
+### Features
+
+- Generate summaries from Wikipedia.
+- Spell check using TextBlob.
+- Change sentences to upper and lower case.
+- Remove newlines and punctuations.
+- Remove stop words using NLTK.
+
+### Requirements
+
+- Python and Django.
+- HTML, CSS and JavaScript.
+- TextBlob, NLTK and other libraries as needed.
+
+### Development Process
+
+- Create the basic framework of the application using Python and Django.
+- Design the user interface using HTML, CSS and JavaScript.
+- Implement the features using TextBlob, NLTK and other libraries as needed.
+- Test the application and address any bugs or issues.
+- Deploy the application on a web server.
+
+### Benefits
+
+- The application will allow users to quickly and easily generate summaries from Wikipedia.
+- The application will allow users to quickly and easily spell check their text.
+- The application will allow users to quickly and easily change sentences to upper and lower case.
+- The application will allow users to quickly and easily remove newlines and punctuations.
+- The application will allow users to quickly and easily remove stop words using NLTK.
+- The application will provide a robust and easy to use interface for users.
+
+
+# Getting Started
 
 These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
 
@@ -49,45 +82,14 @@ python manage.py runserver
 
 ## Authors
 
-* **<Kalaichelvan Tamilselvan>** - *Initial work* - [<Kalaichelvan-Tamilselvan>](https://github.com/<username>)
+* **Kalaichelvan Tamilselvan** - *Initial work* - [Kalaichelvan-Tamilselvan](https://github.com/Kalaichelvan-Tamilselvan)
 
 See also the list of [contributors](https://github.com/<username>/smart-app/contributors) who participated in this project.
 
-## License
-
-This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
 
 
-### Features
+If you have any questions, please contact me at karthikalaichelvan@gmail.com. You can view more of my work at [Kalaichelvan-Tamilselvan](https://github.com/Kalaichelvan-Tamilselvan).
 
-- Generate summaries from Wikipedia.
-- Spell check using TextBlob.
-- Change sentences to upper and lower case.
-- Remove newlines and punctuations.
-- Remove stop words using NLTK.
-
-### Requirements
-
-- Python and Django.
-- HTML, CSS and JavaScript.
-- TextBlob, NLTK and other libraries as needed.
-
-### Development Process
-
-- Create the basic framework of the application using Python and Django.
-- Design the user interface using HTML, CSS and JavaScript.
-- Implement the features using TextBlob, NLTK and other libraries as needed.
-- Test the application and address any bugs or issues.
-- Deploy the application on a web server.
-
-### Benefits
-
-- The application will allow users to quickly and easily generate summaries from Wikipedia.
-- The application will allow users to quickly and easily spell check their text.
-- The application will allow users to quickly and easily change sentences to upper and lower case.
-- The application will allow users to quickly and easily remove newlines and punctuations.
-- The application will allow users to quickly and easily remove stop words using NLTK.
-- The application will provide a robust and easy to use interface for users.
 
 
 # Development Tickets for Project
