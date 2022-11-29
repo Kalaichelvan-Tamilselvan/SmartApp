@@ -2,6 +2,62 @@
 
 This project will create a web application using Python, Django, HTML, CSS and JavaScript. The application will allow users to generate summaries from Wikipedia, spell check, change sentences to upper case and lower case, remove newlines, remove punctuations and remove stop words. 
 
+## Getting Started
+
+These instructions will get you a copy of the project up and running on your local machine for development and testing purposes.
+
+### Prerequisites
+
+What things you need to install the software and how to install them
+
+```
+Python3
+Django
+HTML
+CSS
+JavaScript
+```
+
+### Installing
+
+A step by step series of examples that tell you how to get a development env running
+
+1. Clone the repository:
+```
+git clone https://github.com/<username>/smart-app.git
+```
+2. Install the required packages:
+```
+pip install -r requirements.txt
+```
+3. Migrate the database:
+```
+python manage.py migrate
+```
+4. Run the server:
+```
+python manage.py runserver
+```
+
+## Built With
+
+* [Python](https://www.python.org/) - Programming language
+* [Django](https://www.djangoproject.com/) - Web framework
+* [HTML](https://www.w3schools.com/html/) - Markup language
+* [CSS](https://www.w3schools.com/css/) - Stylesheet language
+* [JavaScript](https://www.javascript.com/) - Programming language
+
+## Authors
+
+* **<Kalaichelvan Tamilselvan>** - *Initial work* - [<Kalaichelvan-Tamilselvan>](https://github.com/<username>)
+
+See also the list of [contributors](https://github.com/<username>/smart-app/contributors) who participated in this project.
+
+## License
+
+This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md) file for details
+
+
 ### Features
 
 - Generate summaries from Wikipedia.
