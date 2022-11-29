@@ -36,42 +36,42 @@ This project will create a web application using Python, Django, HTML, CSS and J
 # Development Tickets for Project
 
 ### UI Stage
-- [ ] Create the index page background, header and the project name
-- [ ] Add the text area into the index page
-- [ ] Create the toggle buttons for the index page
-- [ ] Add the submit button and align it correctly
-- [ ] Properly formatting of the result body within the guide page
-- [ ] Add hamburger button to the guide header, it should be clickable, and we should be able to see "home" link
+- Create the index page background, header and the project name
+- Add the text area into the index page
+- Create the toggle buttons for the index page
+- Add the submit button and align it correctly
+- Properly formatting of the result body within the guide page
+- Add hamburger button to the guide header, it should be clickable, and we should be able to see "home" link
 
 ### App Logic Stage
-- [ ] Add logic for removing punctuations
-- [ ] Add logic to convert text to upper case and lower case
-- [ ] Add logic to remove new line from text
-- [ ] Add logic to remove extra space
-- [ ] Add logic to count characters
-- [ ] Add logic to check for text spellings
-- [ ] Add logic to generate summary of word
-- [ ] Add logic to remove stop words from text
-- [ ] Connect submit button with the logics
-- [ ] Add logic to display the result of each toggles
+- Add logic for removing punctuations
+- Add logic to convert text to upper case and lower case
+- Add logic to remove new line from text
+- Add logic to remove extra space
+- Add logic to count characters
+- Add logic to check for text spellings
+- Add logic to generate summary of word
+- Add logic to remove stop words from text
+- Connect submit button with the logics
+- Add logic to display the result of each toggles
 
 ### Testing Stage
-- [ ] Verify the accuracy of the results in each toggle 
-- [ ] Verify the responsiveness of the design
-- [ ] Test the toggles for correctness
-- [ ] Verify the accuracy of the text spellings
-- [ ] Verify the accuracy of the character count
-- [ ] Verify the accuracy of the word summary
-- [ ] Verify the accuracy of the stop words
-- [ ] Verify the accuracy of the new line removal
-- [ ] Verify the accuracy of the punctuation removal
-- [ ] Verify the accuracy of the extra space removal
+- Verify the accuracy of the results in each toggle 
+- Verify the responsiveness of the design
+- Test the toggles for correctness
+- Verify the accuracy of the text spellings
+- Verify the accuracy of the character count
+- Verify the accuracy of the word summary
+- Verify the accuracy of the stop words
+- Verify the accuracy of the new line removal
+- Verify the accuracy of the punctuation removal
+- Verify the accuracy of the extra space removal
 
 ### DEPLOYMENT STAGE
-- [ ] 1.26 Ensure that all the URLs, titles, and meta data are updated
-- [ ] 1.27 Create the automated build for the project
-- [ ] 1.28 Upload all the files to the server
-- [ ] 1.29 Configure the web server
-- [ ] 1.30 Perform a test deployment
-- [ ] 1.31 Finalize the deployment and make the project live
+- Ensure that all the URLs, titles, and meta data are updated
+- Create the automated build for the project
+- Upload all the files to the server
+- Configure the web server
+- Perform a test deployment
+- Finalize the deployment and make the project live
 
