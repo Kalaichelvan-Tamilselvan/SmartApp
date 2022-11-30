@@ -57,7 +57,7 @@ A step by step series of examples that tell you how to get a development env run
 
 1. Clone the repository:
 ```
-git clone https://github.com/Kalaichelvan-Tamilselvan/smart-app.git
+git clone https://github.com/Kalaichelvan-Tamilselvan/SmartApp.git
 ```
 2. Install the required packages:
 ```
