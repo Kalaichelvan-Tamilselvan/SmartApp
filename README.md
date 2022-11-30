@@ -1,6 +1,6 @@
 # Smart App
 
-This project will create a web application using Python, Django, HTML, CSS and JavaScript. The application will allow users to generate summaries from Wikipedia, spell check, change sentences to upper case and lower case, remove newlines, remove punctuations and remove stop words. 
+To create a web application using Python, Django, HTML, CSS and JavaScript. The application will allow users to generate summaries from Wikipedia, spell check, change sentences to upper case and lower case, remove newlines, remove punctuations and remove stop words. 
 
 
 ### Features
@@ -57,7 +57,7 @@ A step by step series of examples that tell you how to get a development env run
 
 1. Clone the repository:
 ```
-git clone https://github.com/<username>/smart-app.git
+git clone https://github.com/Kalaichelvan-Tamilselvan/smart-app.git
 ```
 2. Install the required packages:
 ```
@@ -92,7 +92,7 @@ If you have any questions, please contact me at karthikalaichelvan@gmail.com. Yo
 
 
 
-# Development Tickets for Project
+# Development Tickets
 
 ### UI Stage
 - Create the index page background, header and the project name
